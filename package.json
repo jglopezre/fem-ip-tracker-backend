@@ -1,6 +1,6 @@
 {
   "name": "fem-ip-tracker-backend",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Backend for fem-ip-tracker app",
   "main": "index.js",
   "author": "Javier Lopez",
