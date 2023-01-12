@@ -35,7 +35,12 @@ const ipTrackRequest = ( req = request, res = response ) => {
 
   const ipAddressReceived = req.params.ipaddress;
 
-  res.json( {...provitionalData, ipAddressReceived} )
+  res.json({
+    ...provitionalData,
+    ip: ipAddressReceived
+  })
+  
+  console.log(`Server API send to client ipAddress ${ ipAddressReceived }`)
 }
 
 const forbidedIpTrackRequest = ( req = request, res = response) => {
