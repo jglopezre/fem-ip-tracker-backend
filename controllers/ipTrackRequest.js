@@ -1,4 +1,6 @@
 const { request, response } = require('express');
+const { fetchData } = require('../helpers/fetchRemoteData');
+
 
 // Provisional data, this data could be erased.
 const provitionalData = {
@@ -34,6 +36,9 @@ const provitionalData = {
 const ipTrackRequest = ( req = request, res = response ) => {
 
   const ipAddressReceived = req.params.ipaddress;
+
+  fetchData().then(console.log)
+  
 
   res.json({
     ...provitionalData,
